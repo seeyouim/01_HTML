@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>html에서 자바스크립트 함수 호출</title>
+<script type="text/javascript">
+	function test(su) {
+		document.write("<h2> 함수호출연습  " + su + "</h2>" );
+		
+	}
+</script>
+</head>
+<body>
+	<h1> 자바스크립트 함수 호출 </h1>
+	방법1 : <script type="text/javascript"> test(1) </script>
+	<!-- 태그 속성이  onXXX는 자바스크립트 함수 호출한다. -->
+	방법 2 : <button on click="test(2)">함수호출</button> <br>
+	방법 3 : <button on click="javascript:test(3)">함수호출</button> <br>
+	방법 4 : <div on click="test(4)">함수호출</div> <br>
+	방법 5 : <form action="Ex07_function.html">
+			<input type="button" value="함수호출" onclick="test(5)">
+	</form>
+</body>
+</html>
